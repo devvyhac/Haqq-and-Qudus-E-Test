@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is our first project, me and abdulhaqq</title>
+        <meta content="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Exam Registration Form</h1>
+            <div class="teacher">
+                <form action="#" method="POST" target="_blank">
+                    <h2>Teacher's Form</h2>
+                    <input type="text" placeholder="Firstname" id="firstname">
+                    <input type="text" placeholder="Lastname" id="lastname">
+                    <input type="text" placeholder="Teachers ID" id="teach-id">
+
+                    <label for="teach-male">Male
+                        <input type="radio" id="teach-male" name="gender" value="M">
+                        <span></span>
+                    </label>
+                      
+                    <label for="teach-female">Female
+                        <input type="radio" id="teach-female" name="gender" value="F">
+                        <span></span>
+                    </label>
+                    
+                    <select name="grade" id="grade">
+                        <option value="select grade">Select Grade</option>
+                        <option value="jss1">JSS 1</option>
+                        <option value="jss2">JSS 2</option>
+                        <option value="jss2">JSS 3</option>
+                        <option value="ss1">SSS 1</option>
+                        <option value="ss2">SSS 2</option>
+                        <option value="ss3">SSS 3</option>
+                    </select>
+                    <input type="password" id="teacher-pass" name="teacher-pass" placeholder="Password">
+                    <input type="password" id="teacher-confirm" name="teacher-confirm" placeholder="Confirm Password">
+                    <input type="submit" value="Register" id="teacher-reg" name="teacher-reg">
+                </form>
+            </div>
+            <div class="examiner">
+                <form action="#">
+                    <h2>Examiner's Form</h2>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                    <input type="text" placeholder="Examiners ID" id="examiner-id">
+                    
+                    <label for="exam-male">Male
+                        <input type="radio" id="exam-male" name="gender" value="M">
+                        <span></span>
+                    </label>
+                      
+                      
+                    <label for="exam-female">Female
+                        <input type="radio" id="exam-female" name="gender" value="F">
+                        <span></span>
+                    </label>
+    
+                    <select name="class" id="class">
+                        <option value="select grade">Select Grade</option>
+                        <option value="JSS 1">JSS 1</option>
+                        <option value="JSS 2">JSS 2</option>
+                        <option value="JSS 3">JSS 3</option>
+                        <option value="SSS 1">SSS 1</option>
+                        <option value="SSS 2">SSS 2</option>
+                        <option value="SSS 3">SSS 3</option>
+                    </select>
+                    <input type="password" id="examiner-pass" name="examiner-pass" placeholder="Password">
+                    <input type="password" id="examiner-confirm" name="examiner-confirm" placeholder="Confirm Password">
+                    <input type="submit" value="Register" id="examiner-reg" name="examiner-reg">
+                </form>
+            </div>
+            <div class="student">
+                <form action="#">
+                    <h2>Student's Form</h2>
+
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                    <input type="text" placeholder="Students ID" id="stud-id">
+                    
+                    <label for="stud-male">Male
+                        <input type="radio" id="stud-male" name="gender" value="M">
+                        <span></span>
+                    </label>
+                      
+                      
+                    <label for="stud-female">Female
+                        <input type="radio" id="stud-female" name="gender" value="F">
+                        <span></span>
+                    </label>
+    
+                    <select name="class" id="class">
+                        <option value="select grade">Select Grade</option>
+                        <option value="JSS 1">JSS 1</option>
+                        <option value="JSS 2">JSS 2</option>
+                        <option value="JSS 3">JSS 3</option>
+                        <option value="SSS 1">SSS 1</option>
+                        <option value="SSS 2">SSS 2</option>
+                        <option value="SSS 3">SSS 3</option>
+                    </select>
+                    <input type="password" id="student-pass" name="student-pass" placeholder="Password">
+                    <input type="password" id="student-confirm" name="student-confirm" placeholder="Confirm Password">
+                    <input type="submit" value="Register" id="student-reg" name="student-reg">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

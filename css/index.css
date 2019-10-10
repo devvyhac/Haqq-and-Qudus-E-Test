@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+* input{
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container h1{
+    text-align: center;
+    color: #747474;
+}
+
+.container > div{
+    margin-top: 50px;
+    position: absolute;
+    border-left: 3px solid #00ff15dc;
+    border-top: 3px solid #00ff15dc;
+    box-shadow: 4px 3px 4px #474747;
+    border-radius: 10px;
+    padding: 30px 50px;
+    width: 27%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-in-out;
+}
+
+.container div input[type=text]:hover, .container div input[type=password]:hover, .container div select:hover{
+    border: 1px solid #7e7e7e;
+}
+
+.container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.container input[type="submit"] {
+    padding: 10px 50px;
+    font-size: 17px;
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #FFF;
+    background-color: #19df2adc;
+}
+
+.container input[type="submit"]:hover{
+    background-color: #6dff79dc;
+}
+  
+.container label {
+    color: #747474;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: block;
+    line-height: 1.2;
+    margin-right: 15px;
+}
+  
+.container span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: #FFF;
+    border: 2px solid #00ff15dc;
+    border-radius: 50%;
+}
+
+.container span:after {
+    content: '';
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00ff15dc;
+    display: none;
+}
+  
+.container input[type="radio"]:checked~span:after {
+    display: block;
+}
+  
+.container input[type="radio"]:focus~span {
+    outline: none;
+}
+
+.container input[type="radio"]:hover~span{
+    border: 2px solid #2a1283dc;
+}
+
+.container * h2{
+    color: #747474;
+    margin-bottom: 40px;
+}
+
+.container * form input, .container * form select, .container * form label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.container .teacher input[type=text], .container .teacher input[type=password], .container .teacher select{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #00ff15dc;
+    border-radius: 5px;
+}
+
+.container .examiner{
+    border-left: 3px solid #0cb4b4;
+    border-top: 3px solid #0cb4b4;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+.container .examiner input[type=text], .examiner input[type=password], .examiner select{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #0cb4b4;
+    border-radius: 5px;
+}
+  
+.container .examiner span {
+    border: 2px solid #0cb4b4;
+}
+  
+.container .examiner span:after {
+    background: #0cb4b4;
+}
+
+
+.container .examiner input[type="submit"]{
+    background: #0cb4b4;
+}
+
+.container .examiner input[type="submit"]:hover{
+    background: #25d3d3;
+}
+
+.container .student{
+    border-left: 3px solid #ff006a;
+    border-top: 3px solid #ff006a;
+    left: 69%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .student input[type=text], .student input[type=password], .student select{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ff006a;
+    border-radius: 5px;
+}
+
+.container .student span {
+    border: 2px solid #ff006a;
+}
+  
+.container .student span:after {
+    background: #ff006a;
+}
+
+.container .student input[type="submit"]{
+    background: #ff006a;
+}
+
+.container .student input[type="submit"]:hover{
+    background: #ff5da0;
+}
