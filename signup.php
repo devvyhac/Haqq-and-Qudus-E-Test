@@ -1,14 +1,20 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>This is our first project, me and abdulhaqq</title>
+        <title>Create An Account</title>
         <meta content="utf-8">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/signup.css">
     </head>
     <body>
         <h1>Exam Registration Form</h1>
-        <div class="container">
-            <div class="examiner">
+        <div class="container" id="container">
+            <div class="examiner" id="examiner">
                 <form action="backend/signup/examiner.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <h2>Examiner's Form</h2>
 
@@ -39,17 +45,17 @@
                     <input type="password" id="examiner-pass" name="examiner-pass" placeholder="Password" autocomplete="new-password" required>
                     <input type="password" id="examiner-confirm" name="examiner-confirm" placeholder="Confirm Password" autocomplete="new-password" required>
                     <div class="avatar">
-                        <label>Select Your Profile Image: </label>
+                        <label class="file-label">Select Your Profile Image: </label>
                         <input type="file" name="picture" accept="images/*" required>
                     </div>
 
-                    <input type="submit" value="Register" id="examiner-reg" name="submit">
+                    <input type="submit" value="Register" id="examiner-reg" name="submit"> <a href="examiner-login.php">Login</a>
                 </form>
             </div>
 
         <!-- Student Area starts from here till before the footer -->
 
-            <div class="student">
+            <div class="student" id="student">
                 <form action="backend/signup/student.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <h2>Student's Form</h2>
 
@@ -80,11 +86,13 @@
                     <input type="password" id="stud-pass" name="stud-pass" placeholder="Password" autocomplete="new-password" required>
                     <input type="password" id="stud-confirm" name="stud-confirm" placeholder="Confirm Password" autocomplete="new-password" required>
                     <div class="avatar">
-                        <label>Select Your Profile Image: </label>
+                        <label class="file-label">Select Your Profile Image: </label>
                         <input type="file" name="picture" accept="images/*" required>
                     </div>
-
-                    <input type="submit" value="Register" id="student-reg" name="submit">
+ 
+                    <div>
+                        <input type="submit" value="Register" id="student-reg" name="submit"> <a href="student-login.php">Login</a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -92,6 +100,6 @@
         <footer class="foot">
 
         </footer>
-
+        <script src="js/signup.js"></script>
     </body>
 </html>
