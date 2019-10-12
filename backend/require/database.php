@@ -31,9 +31,9 @@ if(!class_exists('DB')){
 
             $result = $this->connect->query($query);
 
-            while($results = $result->fetch_assoc()){
-                $result = $results;
-            }
+            // while($results = mysqli_fetch_assoc($result)){
+            //     $result = $results;
+            // }
 
             return $result;
 

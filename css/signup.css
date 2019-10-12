@@ -1,0 +1,197 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* input{
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 72%;
+    margin: 0 auto;
+    height: auto;
+    padding: 50px;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    transition: all 0.6s ease-in-out;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 1px 0;
+    color: #8a8484;
+}
+
+.container > div{
+    box-shadow: 4px 3px 4px #474747;
+    border-left: 3px solid #0cb4b4;
+    border-top: 3px solid #0cb4b4;
+    border-radius: 10px;
+    padding: 20px 40px;
+    height: auto;
+    width: 70%; 
+    transition: all 0.6s ease-in-out;
+}
+
+.container > div a{
+    float: right;
+    text-decoration: none;
+    color: #0cb4b4;
+    margin-top: 3%;
+}
+
+.container .examiner{
+    margin-left: 10%;
+}
+
+.container .student{
+    margin-right: 10%;
+}
+
+.container > div:hover, .container div:focus{
+    transform: scale(1.1);
+    z-index: 9;
+    background-color: #eee;
+}
+
+.container .examiner:hover, .container .examiner:focus{
+    margin-left: 20%;
+}
+
+.container .student:hover, .container .examiner:focus{
+    margin-right: 20%;
+}
+
+.container * h2{
+    color: #747474;
+    margin-bottom: 20px;
+}
+
+.container * form input[type=text], .container * form input[type=password], .container * form input[type=file], .container * form select, .container * form label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.container div input[type=text], div input[type=password], div select{
+    width: 100%;
+    padding: 7px 20px;
+    border: 1px solid #0cb4b4;
+    border-radius: 5px;
+}
+
+.container div input[type=text]:fucus, div input[type=password]:fucus, div select:fucus{
+    -moz-outline-radius: 5px;
+}
+  
+.container div span {
+    border: 2px solid #0cb4b4;
+}
+  
+.container div span:after {
+    background: #0cb4b4;
+}
+
+
+.container div input[type="submit"]{
+    background: #0cb4b4;
+}
+
+.container div input[type="submit"]:hover{
+    background: #25d3d3;
+}
+
+.container div input[type=text]:hover, .container div input[type=password]:hover, .container div select:hover{
+    border: 1px solid #7e7e7e;
+}
+
+.container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.container input[type="submit"] {
+    padding: 10px 50px;
+    font-size: 17px;
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #FFF;
+    background-color: #19df2adc;
+}
+
+.container input[type="submit"]:hover{
+    background-color: #6dff79dc;
+}
+  
+.container label {
+    color: #747474;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: block;
+    line-height: 1.2;
+    margin-right: 15px;
+}
+
+.container .file-label{
+    padding-left: 0;
+}
+  
+.container span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: #FFF;
+    border: 2px solid #00ff15dc;
+    border-radius: 50%;
+}
+
+.container span:after {
+    content: '';
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00ff15dc;
+    display: none;
+}
+  
+.container input[type="radio"]:checked~span:after {
+    display: block;
+}
+  
+.container input[type="radio"]:focus~span {
+    outline: none;
+}
+
+.container input[type="radio"]:hover~span{
+    border: 2px solid #2a1283dc;
+}
+
+.foot{
+    height: 300px;
+    width: 100%;
+    background-color: #25d3d3;
+}

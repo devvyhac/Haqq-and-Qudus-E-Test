@@ -30,7 +30,6 @@
                             if($db->insert($query) === true){
                                 $_SESSION['message'] = 'User Added to the database successfully!';
                                 header('Location: ../../dashboard/exam_hall.php');
-                                return $db->insert($query);
                             }
                             else{
                                 echo 'Unable to Access the database!';
