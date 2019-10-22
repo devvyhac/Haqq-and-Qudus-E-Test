@@ -7,10 +7,12 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Student Login</title>
   <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+
   <form action="backend/login/std_login.php" method="POST">
     <div class="container">
       <h2>Student's Login</h2>

@@ -1,22 +1,11 @@
 <?php 
-    session_start();
-    require_once('database.php');
 
-    if(!class_exists('QUERY')){
+require_once('database.php');
 
-        class QUERY{
-            public function query($sql){
-                global $db;
+$db->connection("examination");
 
-                $query = "SELECT * FROM examiner";
+$sql = "SELECT * FROM examiners";
 
-                return $db->select($query);
-
-            }
-        }
-
-    }
-
-    $query = new QUERY;
-
+$result = $db->select($sql);
+    
 ?>

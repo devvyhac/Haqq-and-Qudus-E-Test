@@ -4,6 +4,8 @@
     require_once('../require/database.php');
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+        $db->connection("examination");
         
         if($_POST['examiner-pass'] === $_POST['examiner-confirm'] && isset($_POST)){
 

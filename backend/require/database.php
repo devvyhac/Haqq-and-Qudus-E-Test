@@ -2,12 +2,12 @@
 
 if(!class_exists('DB')){
     class DB{
-        public function __construct(){
+        public function connection($dbname){
 
             $host = 'localhost';
             $username = 'root';
             $password = '';
-            $dbname = 'examination';
+            // $dbname = 'examination';
 
             $mysql = new mysqli($host, $username, $password, $dbname);
 
@@ -18,6 +18,12 @@ if(!class_exists('DB')){
 
             $this->connect = $mysql;
         }
+
+        // public function setter($name){
+
+        //     $this->dbname = $name;
+
+        // }
 
         public function insert($query){
 
