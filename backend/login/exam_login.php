@@ -1,8 +1,9 @@
 <?php
 session_start();
     if(isset($_POST['submit'])){
+        
         require_once("../require/database.php");
-        global $db;
+        $db->connection('examination');
 
         $examiner_id = $db->connect->real_escape_string($_POST['examId']);
         $password = $db->connect->real_escape_string($_POST['examPass']);
@@ -39,7 +40,7 @@ session_start();
                             $_SESSION['grade'] = $row['grade'];
                             $_SESSION['picture'] = $row['picture'];
 
-                            header('Location: ../../dashboard/exam_hall.php?login=success');
+                            header('Location: ../../dashboard/welcome.php?login=success');
                             exit();
                         }
                     }

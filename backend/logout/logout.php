@@ -8,10 +8,7 @@
 ?>
     <div>
         <?php 
-
-            echo 'you have been logged out of the server';
-            // header('Location: ../../student_login.php');
-
+            header('Location: ../../index.php');
         ?>
     </div>
 

@@ -7,6 +7,8 @@
         
         if($_POST['stud-pass'] === $_POST['stud-confirm'] && isset($_POST)){
 
+            $db->connection("examination");
+
             if (isset($_POST['submit'])){
                 
                 $firstname = $db->connect->real_escape_string($_POST['firstname']);

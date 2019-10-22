@@ -12,6 +12,13 @@ session_start();
         <link rel="stylesheet" href="css/signup.css">
     </head>
     <body>
+
+    <?php 
+
+        require 'include/header.php';
+
+    ?>     
+
         <h1>Exam Registration Form</h1>
         <div class="container" id="container">
             <div class="examiner" id="examiner">
@@ -49,7 +56,7 @@ session_start();
                         <input type="file" name="picture" accept="images/*" required>
                     </div>
 
-                    <input type="submit" value="Register" id="examiner-reg" name="submit"> <a href="examiner-login.php">Login</a>
+                    <input type="submit" value="Register" id="examiner-reg" name="submit"> <a href="examiner_login.php">Login</a>
                 </form>
             </div>
 
@@ -91,7 +98,7 @@ session_start();
                     </div>
  
                     <div>
-                        <input type="submit" value="Register" id="student-reg" name="submit"> <a href="student-login.php">Login</a>
+                        <input type="submit" value="Register" id="student-reg" name="submit"> <a href="student_login.php">Login</a>
                     </div>
                 </form>
             </div>
@@ -101,5 +108,9 @@ session_start();
 
         </footer>
         <script src="js/signup.js"></script>
-    </body>
-</html>
+
+    <?php 
+
+        require 'include/footer.php';
+
+    ?>
